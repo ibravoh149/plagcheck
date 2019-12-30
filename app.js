@@ -79,6 +79,10 @@ class Server {
       res.send("error");
     });
   }
+
+  getApp(){
+    return this.app
+  }
 }
 
 module.exports = new Server();

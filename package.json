@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "cross-env NODE_ENV=test mocha",
     "start": "node index.js",
     "dev": "nodemon index.js --watch",
     "lint": "eslint ."
@@ -15,11 +15,13 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
     "express-validator": "^6.2.0",
+    "faker": "^4.1.0",
     "helmet": "^3.21.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.9",
@@ -27,14 +29,13 @@
     "morgan": "^1.9.1",
     "nconf": "^0.10.0",
     "otplib": "^11.0.1",
-    "string-similarity": "^3.0.0",
     "swagger-ui-express": "^4.1.2",
     "uuid": "^3.3.3",
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "cors": "^2.8.5",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
     "supertest": "^4.0.2"
